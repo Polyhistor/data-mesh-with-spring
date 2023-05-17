@@ -15,7 +15,7 @@ function check_jq() {
 }
 
 function preflight_checks() {
-  # Verifications
+  # Verifications - debugging this bit
   ccloud::validate_version_cli $CCLOUD_MIN_VERSION \
     && print_pass "confluent version ok" \
     || exit 1
